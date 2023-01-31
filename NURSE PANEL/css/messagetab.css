@@ -1,0 +1,91 @@
+.row1 {
+  display: grid;
+  grid-template-columns: 58% 40%;
+  gap: 1rem;
+}
+
+.column {
+  padding: 16px;
+  height: 250px;
+  gap: 1rem;
+}
+.column2 {
+  padding: 16px;
+  height: 250px;
+  gap: 2rem;
+}
+.msgsearch{
+  border: none;
+  width: 100%;
+  padding:10px;
+  
+  }
+.stdmsg{
+  margin-top: 20px;
+  width: 100%;
+  background-color: white;
+  height:120px;
+}
+
+.stdmsg p{
+  margin:0;
+  padding: 0;
+}
+
+.datetime{
+  font-size:12px;
+  text-align: right;
+  color: grey;
+}
+.std-name{
+  font-weight: bold;
+  font-size:16px;
+}
+#stdimage{
+  float: left;    
+ margin: 0 15px 0 0;
+ width: 100px;
+ height: 100px;
+ border: 1px solid blue;
+ border-radius: 100%;
+}
+.stdname{
+  color:rgb(13, 139, 212);
+}
+.stdchat{
+  background-color: white;
+  height: 450px;
+  margin-bottom: 10px;
+ 
+  
+}
+#stdimg{
+  margin-top:380px;
+  
+  float:left;    
+ width: 70px;
+ height: 70px;;
+ border: 1px solid blue;
+ border-radius: 100%;
+ 
+}
+
+.chatbg{
+  margin-left: 10px;
+  width: auto;
+  border: none;
+  border-radius:10px;
+  background-color: lightgray;
+  margin-top: 400px;
+  
+
+}
+
+.msgreply{
+  border: none;
+  width: 100%;
+  padding:10px;
+  border:0.5px solid black;
+  border-radius: 20px;
+  
+  }

@@ -1,0 +1,64 @@
+h3{
+    font-size: 24px;
+}
+
+.headerpatients{
+    margin-left:120px;
+    padding: 20px;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 4px 2px 2px #d9d9d9;
+  
+}
+.headerpatients1{
+ font-weight:bold;
+ font-size:20px;
+ margin-left: 1rem;
+}
+.reportfilter{
+    float: right;
+    border:none;
+    color: grey;
+    padding:0.5rem    ;
+    background-color: #d9d9d9;
+}
+.report-tbl{
+  margin-top: 20px;
+ margin-left: 120px;
+ width: 800px;   
+ border: 2px;
+ border-bottom-width: 10px;
+ border-collapse: separate;
+ margin-bottom: 10px;
+}
+
+
+.tbl_report td{
+    background-color: rgb(252, 252, 252);
+    margin-bottom: 1rem;
+    border-spacing:20px;
+    row-gap: 100px;
+    border-spacing:2px;
+    border: 0.1px ;
+    border-bottom-width: 10px;
+    
+}
+.complete{
+    color:#2d7538;
+}
+.pending{
+    color:#d9d9d9;
+}
+.inc{
+    color:#ff4646;
+}
+.reportbtn{
+    margin-left:850px;
+    color:white;
+    background-color: #5D8FD9;
+    border: none;
+
+}
+.colsp{
+    background-color: transparent;
+}

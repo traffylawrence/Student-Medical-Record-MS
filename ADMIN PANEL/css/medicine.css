@@ -1,0 +1,223 @@
+/* header */
+#medicine .medicine_header{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#medicine .medicine_header h3{
+    font-size: 26px;
+}
+#medicine .medicine_header .custom_btn{
+    background-color: #5D8FD9;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 160px;
+    border-radius: 10px;
+    transition: .3s;
+}
+#medicine .medicine_header .custom_btn i{
+    margin-right: 10px;
+}
+#medicine .medicine_header .custom_btn:hover{
+    scale:1.1;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* filter */
+#medicine .filter_wrapper{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    /* height:50px; */
+    border-radius: 5px;
+    background: #D9D9D9;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#medicine .filter_wrapper .sort{
+    display: flex;
+    align-items: center;
+}
+#medicine .filter_wrapper .sort span{
+    font-weight: 500;
+     color: rgb(26, 26, 26);
+     margin-right: 10px;
+}
+#medicine .filter_wrapper .sort #filter{
+    width: 50%;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+#medicine .filter_wrapper .r{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 40px 40px;
+}
+#medicine .filter_wrapper .search{
+    width: 100%;
+}
+#medicine .filter_wrapper .search input{
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #F2F2F2;
+    width: 100%;
+    outline: none;
+    border: none;
+    
+}
+#medicine .filter_wrapper .grid,
+#medicine .filter_wrapper .bars{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#medicine .filter_wrapper .grid i{
+    color: #a0a0a0;
+    font-size: 23px;
+}
+#medicine .filter_wrapper .bars i{
+    color: #000;
+    font-size: 23px;
+}
+
+.table-mdc{
+    width: 100%;
+    border: 1px none;
+    /* margin-bottom :1rem; */
+    background-color: none;
+    border-radius :10px;
+    /* box-shadow: 0 4px 2px -2px gray; */
+    cursor: pointer;
+    transition: .3s;
+}
+.table-mdc td{
+padding-right:10px;
+}
+.btn-mdcdetails{
+    background-color:#5d8fd9;
+    color: white;
+    padding:10px;
+    border: none;
+    width: 100%;
+    transition: .3s;
+}
+.dcontainer{
+    width: 100%;
+    height:75px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+}
+.b1 , .b2{
+    font-weight: bold;
+}
+/* .qty{
+    color: black;
+} */
+
+
+/* From Abihay */
+/* .table-mdc:hover{
+    background-color:#dddddd;
+    transform: translateY(-2px);
+    box-shadow: 5px 10px 5px -5px gray;
+}
+.btn-mdcdetails:hover{
+    background-color:#28446e ;
+    transform: translateY(-2px);
+} */
+.medicine-table{
+    width: 100%;
+}
+.mdc-brand{
+    color: rgb(43, 35, 35);
+    /* font-style: italic; */
+    font-size: .7em;
+}
+.mdc-stock{
+    font-weight: 700;
+}
+.mdc-qty{
+    font-weight: 300;
+}
+.mdc-qrcode{
+    width: 100px;
+    transition: .3s;
+    border: 1px solid black;
+}
+.mdc-dropdown-icon{
+    width:20px;
+}
+.mdc-qrcode:hover{
+    scale: 1.1;
+}
+/* Collapse */
+.mdc-header{
+    cursor: pointer;
+}
+.mdc-description{
+    width: 50%;
+    text-align: justify;
+}
+/* .table-mdc img{
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+} */
+
+.accordion{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* label:before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+} */
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+/* .accordion input[type="radio"]:checked + label::before{
+    content: '-';
+} */

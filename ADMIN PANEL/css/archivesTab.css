@@ -1,0 +1,116 @@
+.archives-nav{
+    background-color: rgb(218, 214, 214);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 7px;
+    display: flex;
+}
+.archives-nav span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.archives-nav input[type="search"]{
+    width: 300px;
+}
+
+
+/* filter */
+#archives .filter_wrapper{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    /* height:50px; */
+    border-radius: 5px;
+    background: #D9D9D9;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#archives .filter_wrapper .sort{
+    display: flex;
+    align-items: center;
+}
+#archives .filter_wrapper .sort span{
+    font-weight: 500;
+     color: rgb(26, 26, 26);
+     margin-right: 10px;
+}
+#archives .filter_wrapper .sort #filter{
+    width: 110px;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+#archives .filter_wrapper .r{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 50px 35px;
+}
+#archives .filter_wrapper .search{
+    margin-top: 5px;
+    width: 100%;
+    
+}
+#archives .filter_wrapper .search input{
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #F2F2F2;
+    width: 100%;
+    outline: none;
+    border: none;
+    
+}
+
+#archives .filter_wrapper .scan button{
+    margin-left: 10px;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    background: #5D8FD9;
+    color: rgb(218, 214, 214);
+    border-radius: 3px;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+
+#archives .filter_wrapper .grid i{
+    color: #a0a0a0;
+    font-size: 23px;
+}
+#archives .filter_wrapper .bars i{
+    color: #000;
+    font-size: 23px;
+}
+
+
+/* table header */
+#archives .archives-content table{
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+#archives .archives-content th sub{
+    display: flex;
+    font-size: 10px;
+    font-weight: 500;
+    color: #999;
+}
+
+/* table content */
+.archives-content td img{
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+}
+#archives .archives-info{
+    border: solid transparent;
+    box-shadow: inset 0 0 0 1px #999;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

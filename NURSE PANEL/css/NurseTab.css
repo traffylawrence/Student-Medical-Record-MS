@@ -1,0 +1,806 @@
+/* header */
+#nurses .nurse_header{
+    margin-bottom: 10px;
+}
+#nurses .nurse_header h3{
+    font-size: 24px;
+}
+#nurses .nurse_header .custom_btn{
+    background: #5D8FD9;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 140px;
+    border-radius: 10px;
+}
+#nurses .nurse_header .custom_btn i{
+    margin-right: 10px;
+}
+
+/* filter */
+#nurses .filter_wrapper{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    /* height:50px; */
+    border-radius: 5px;
+    background: #D9D9D9;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#nurses .filter_wrapper .sort{
+    display: flex;
+    align-items: center;
+}
+#nurses .filter_wrapper .sort span{
+    font-weight: 500;
+     color: rgb(26, 26, 26);
+     margin-right: 10px;
+}
+#nurses .filter_wrapper .sort #filter{
+    width: 110px;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+#nurses .filter_wrapper .r{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 40px 40px;
+}
+#nurses .filter_wrapper .search{
+    width: 100%;
+}
+#nurses .filter_wrapper .search input{
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #F2F2F2;
+    width: 100%;
+    outline: none;
+    border: none;
+    
+}
+#nurses .filter_wrapper .grid,
+#nurses .filter_wrapper .bars{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#nurses .filter_wrapper .grid i{
+    color: #a0a0a0;
+    font-size: 23px;
+}
+#nurses .filter_wrapper .bars i{
+    color: #000;
+    font-size: 23px;
+}
+
+/* card */
+#nurses .card_container{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); */
+    /* grid-gap: 20px; */
+    padding-inline-start: 0;
+    grid-gap: 15px;
+}
+#nurses .card_container .card{
+    padding: 7px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#nurses .card_container .card:hover{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+  #nurses .card_container .card img{
+    width:200px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom:6px;
+}
+#nurses .card_container .card .card_content{
+    padding: 0 10px;
+    display: grid;
+}
+  #nurses .card_container .card .card_content .stud_id{
+    font-weight: bold;
+  }
+  #nurses .card_container .card .card_content .name{
+    font-weight: 500;
+  }
+  #nurses .card_container .card .card_content .nurse{
+    color: #999;
+  }
+  #nurses .card_container .card .card_content .card_footer{
+    display: flex;
+    align-items: center;
+}
+  #nurses .card_container .card .card_content .card_footer .date{
+    color: #5D8FD9;
+    font-size: 14px;
+    flex: 1;
+  }
+  #nurses .card_container .card .card_content .card_footer i{
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  #nurses .card_container .card .card_content .card_footer i:nth-child(2){
+    color: #999;
+  }
+  #nurses .card_container .card .card_content .card_footer i:nth-child(3){
+    color: #5180C7;
+    transform: translate(0, -1px);
+  }
+  .nurse_landing{
+    display: block;
+  }
+  .nurse_landing.active{
+    display: none;
+  }
+  /* nurse account */
+  .nurse_account_section{
+    display: none;
+  }
+  .nurse_account_section.active{
+    display: block;
+    padding-top: 50px;
+  }
+  .nurse_account_section.active h3{
+    font-weight: bold;
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+  .nurse_account_section.active .form_wrapper{
+    background: #fff;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    min-height: 570px;
+    height: 100%;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .nurse_account_section.active .form_wrapper .profile_picture{
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    transform: translate(-50%, 0);
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    background: #D9D9D9;
+}
+  .nurse_account_section.active .form_wrapper .profile_picture img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+  }
+  .nurse_account_section.active .form_wrapper .border{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    height: 87%;
+    display: flex;
+}
+.nurse_account_section.active .form_wrapper .border span{  
+    border: 1px solid #999;
+    height: 100%;
+  }
+  .nurse_account_section.active .form_wrapper .l_form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    padding-top: 40px;
+    /* background: pink; */
+  }
+  .nurse_account_section.active .form_wrapper .l_form h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  .nurse_account_section.active .form_wrapper .l_form .input_wrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  .nurse_account_section.active .form_wrapper .l_form .input_wrap span{
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .nurse_account_section.active .form_wrapper .l_form .input_wrap input{
+    outline: none;
+    
+  }
+  .nurse_account_section.active .form_wrapper .l_form button{
+    background: #5180C7;
+    border: none;
+    outline: none;
+    width: 120px;
+    padding: 2px 0;
+    color: #fff;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .nurse_account_section.active .form_wrapper .l_form .note{
+    background: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .nurse_account_section.active .form_wrapper .l_form .note .note_color{
+    color: #ff4646;
+  }
+/* nurse account otp_modal */
+  .confirmation_modal{
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0,0.4);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in;
+  }
+  .confirmation_modal.active{
+    visibility: visible;
+    opacity: 1;
+  }
+  .confirmation_modal .confirmation{
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    margin: 0 20px;
+  }
+  .confirmation_modal .confirmation h3{
+    font-weight: bold;
+    color: #000;
+  }
+  .confirmation_modal .confirmation span{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  
+  /* nurse add section */
+  .add_nurse_section{
+    display: none;
+
+  }
+  .add_nurse_section.active{
+    display: block;
+  }
+  .add_nurse_section.active .wrap_add_nurse{
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 340px;
+      grid-gap: 10px;
+  }
+  .add_nurse_section .a_n_title{
+    border-bottom: 1px solid #000;
+  }  
+  .add_nurse_section .a_n_title h3{
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .add_nurse_section .a_n_title p{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .add_nurse_section .a_n_title span{
+    color: #ff4646;
+    margin-right: 5px;
+  }
+  /* basic info */
+  .add_nurse_section.active .wrap_add_nurse .l_nurse{
+
+    padding-bottom: 20px;
+  
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info{
+    border-bottom: 1px solid#000;
+    padding-bottom: 20px;
+  }
+
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info h3{
+    padding: 15px 0;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .b_i_input{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 120px 1fr;
+    margin-bottom: 10px;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .b_i_input.radio{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 120px 80px 80px 80px;
+    margin-bottom: 10px;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .b_i_input.radio input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: #2b2a29;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .b_i_input.surname{
+    margin-bottom: 20px;
+  }
+  /* contact information */
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .contact_information{
+    min-height: 200px;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid #000;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .contact_information h3{
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+
+  /* emergency */
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .emergency{
+    min-height: 200px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .emergency h3{
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+/* attached file */
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files{
+  min-height: 260px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files h3{
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission{
+  padding: 5px 10px;
+  background: #D9D9D9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission span:nth-child(1){
+  font-weight: bold;
+  flex: 1
+  ;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission span:nth-child(2){
+  margin-right: 80px;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission .file label{
+  background: #F2F2F2;
+  padding: 2px 10px;
+}
+    /* id  */
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap{
+    display: flex;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .basic_info_input{
+    width: 100%;
+    max-width: 900px;
+    margin-right: 30px;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .nurse_id_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .nurse_id_wrapper img{
+    height: 150px;
+    width: 150px;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .nurse_id_wrapper label{
+    background: #999;
+    color: #fff;
+    padding: 4px;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+  }
+  /* set schedule */
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .set_schedule{
+    /* min-height: 200px; */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .set_schedule h3{
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .set_schedule .schedule_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .set_schedule .schedule_wrapper .tab{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background: #f2f2f2;
+    color: #000;
+    border: 2px solid #000;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    box-sizing: border-box;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse  .set_schedule .schedule_wrapper .tab.active{
+    border: 2px solid #5D8FD9;
+    color: #5D8FD9;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .add_nurse_btn{
+    display: flex;
+    padding: 15px 0;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .add_nurse_btn .cancel{
+    margin-left: auto;
+    background: #fff;
+    color: #000;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .add_nurse_btn .add{
+    background: #5180C7;
+    color: #fff;
+    margin-left: 10px;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .add_nurse_btn .btn{
+    padding: 5px 15px;
+  }
+
+/* nurse id */
+  .hidden{
+    display: none;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse{
+    position: relative;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .border_px{
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    top: 0;
+    right: -11px;
+  }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id{
+    padding: 0 10px;
+   }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box{
+    display: flex;
+    flex-direction: column;
+   }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box .id_pic{
+    background: #999;
+    height: 300px;
+    width: 100%;
+   }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box .print_wrapper{
+    margin-left: auto;
+   }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box .print_wrapper button{
+    padding: 6px 15px;
+    margin-top: 10px;
+   }
+   .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box .print_wrapper .download{
+    color: #5180C7;
+    border: none;
+    outline: none;
+  }
+  .add_nurse_section.active .wrap_add_nurse .l_nurse_id .id_box .print_wrapper .print{
+    background: #5180C7;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+  }
+
+
+  .nurse_info_section{
+    display: none;
+
+  }
+  .nurse_info_section.active{
+    display: block;
+  }
+  .nurse_info_section .a_n_title{
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 0;
+  }
+  .nurse_info_section .a_n_title .edit_delete_btn button{
+    padding: 0px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .nurse_info_section .a_n_title .edit_delete_btn .remove{
+    background: #ff4646;
+  }
+  .nurse_info_section .a_n_title .edit_delete_btn .edit{
+    background: #5D8FD9;
+    margin-left: 10px;
+  }
+
+
+  /* nurse card - info */
+  .nurse_info_section .l_nurse .basic_info{
+    padding-top: 5px;
+    display: grid;
+  }
+  .nurse_info_section .l_nurse .basic_info .number_nurse{
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .nurse_info_section .l_nurse .basic_info h4{
+    font-size: 22px;
+    padding-top: 5px;
+  }
+  .nurse_info_section .l_nurse .basic_info span:nth-child(3){
+    color: rgb(105, 105, 105);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .nurse_info_section .l_nurse .basic_info span:nth-child(4){
+    color: rgb(105, 105, 105);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .nurse_info_section .l_nurse .basic_info .sched{
+    display: flex;
+    align-items: center;
+    
+  }
+  .nurse_info_section .l_nurse .basic_info .sched div:nth-child(1){
+    font-weight: 600;
+    margin-right: 15px;
+  }
+  .nurse_info_section .l_nurse .basic_info .sched .day{
+    margin-right: 10px;
+    background: #5180C7;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  #nurses .delete_nurse_modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+     z-index: 9999;  
+     background: rgba(0, 0, 0,0.3); 
+     display: grid;
+     place-items: center;
+     visibility: hidden;
+     opacity: 0;
+     transition: 0.3s ease;
+  }
+  #nurses .delete_nurse_modal.active{
+    visibility: visible;
+    opacity: 1;
+  }
+  #nurses .delete_nurse_modal .delete_card{
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px 30px 20px;
+  }
+  #nurses .delete_nurse_modal .delete_card .remove_trash{
+    position: absolute;
+    top: -25px;
+    height:50px;
+    width: 50px;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    border-radius: 50px;
+    border: 2px solid rgb(104, 104, 104);
+    color: #ff4646;
+  }
+
+  #nurses .delete_nurse_modal .delete_card h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+  }
+  #nurses .delete_nurse_modal .delete_card .nurse_id{
+    color: #5D8FD9;
+    font-weight: bold;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  #nurses .delete_nurse_modal .delete_card .button_wrap{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  #nurses .delete_nurse_modal .delete_card .button_wrap button{ 
+      border: none;
+      outline: none;
+      font-weight: bold;
+    width: 120px;
+    height: 40px;
+  }
+  #nurses .delete_nurse_modal .delete_card .button_wrap button:nth-child(2){
+    background: #ff4646;
+    color: #fff;
+   }
+   #nurses .delete_nurse_modal .delete_card #down{
+    /* color: #Fff; */
+    margin: 10px 0;
+    font-size: 25px;
+   }
+   #nurses .delete_nurse_modal .delete_card p{
+    font-weight: 600;
+   }
+   #nurses .delete_nurse_modal .delete_card select{
+    width: 90%;
+   }
+@media screen and (max-width: 1200px){
+  .nurse_account_section.active .form_wrapper .l_form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    padding-top: 40px;
+    /* background: pink; */
+  }
+  /* id */
+  .add_nurse_section.active .wrap_add_nurse{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 240px;
+    grid-gap: 10px;
+}
+}
+@media screen and (max-width: 1114px){
+  .add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .nurse_id_wrapper {
+  margin:  unset;
+  margin-bottom: 40px;
+}
+.add_nurse_section.active .wrap_add_nurse {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse .basic_info .info_and_id_wrap .basic_info_input {
+  margin-right: 0px;
+}
+/* attached files */
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission{
+  padding: 5px 10px;
+  background: #D9D9D9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission span:nth-child(1){
+  font-weight: bold;
+  flex: unset;
+}
+.add_nurse_section.active .wrap_add_nurse .l_nurse  .attached_files .submission span:nth-child(2){
+  margin-right: 0px;
+}
+}
+@media screen and (max-width: 992px){
+  .nurse_account_section.active h3 {
+    padding-bottom: 90px;
+  }
+  .nurse_account_section.active {
+    display: block;
+    padding-top: 0px;
+}
+  .nurse_account_section.active .form_wrapper{
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+  .nurse_account_section.active .form_wrapper .border{
+    display: none;
+  }
+  /* .nurse_account_section.active .form_wrapper .profile_picture{
+    right: 35px;
+    left: unset;
+    transform: translate(0); 
+  } */
+  .nurse_account_section.active .form_wrapper .profile_picture img{
+    height: 90px;
+    width: 90px;
+  }
+  .nurse_account_section.active .form_wrapper .l_form:nth-child(3){
+    padding-bottom: 30px;
+    border-bottom: 1px solid #999;
+  }
+}
+@media screen and (max-width: 788px){
+    /* section padding  */
+    .content_wrapper{
+        padding: 20px;
+    }
+
+    #nurses .filter_wrapper{
+        padding: 10px 20px;
+        /* height:50px; */
+        border-radius: 5px;
+        background: #D9D9D9;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        row-gap: 15px;
+    }
+    #nurses .filter_wrapper .sort{
+        display: flex;
+        align-items: center;
+     
+    }
+
+
+}
+
+@media screen and (max-width: 588px){
+  #nurses .card_container {
+    justify-content: center;
+  }
+
+  /* confirmation */
+  .confirmation_modal .confirmation{
+    background: #fff;
+    padding: 30px 10px;
+    text-align: center;
+    margin: 0 20px;
+  }
+}

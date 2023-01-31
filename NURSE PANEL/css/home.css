@@ -1,0 +1,362 @@
+/*header*/
+#dashboard .dashboard_header{
+    margin-bottom: 10px;
+}
+#dashboard .dashboard_header h3{
+    font-size: 20px;
+}
+
+/*Nurses Information*/
+#dashboard .card_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    grid-gap: 15px;
+    padding-top: 20px;
+}
+
+#dashboard .card_container .card{
+    padding: 5px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+#dashboard .card_container .card {
+	color: white;
+    width: 585px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom:6px;
+    background-color: #05285c;
+}
+
+#dashboard .card_container .card .card_content{
+    padding: 7px 0px 10px 180px;
+    display: grid;
+}
+
+#dashboard .card_container .card .card_content span {
+    padding-bottom: 3px;
+}
+
+#dashboard .card_container .card .card_content .number{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#dashboard .card_container .card .card_content .name{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#dashboard .card_container .card .card_content .position{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#dashboard .card_container .card .card_content_consultation{
+    display: grid;
+    position: absolute;
+    padding-left: 450px;
+    padding-top: 5px;
+}
+
+#dashboard .card_container .card .card_content_consultation .number{
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+#dashboard .card_container .card .card_content_consultation .text{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+#dashboard .card_container .card .icon img{
+   display: fixed;
+   padding-left: 40px;
+   position: absolute;
+   top: -30px;
+   width: 140px;
+   height: 115px;
+} 
+
+/*Line Chart*/
+#dashboard .chart_container {
+	display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    grid-gap: 15px;
+    padding-bottom: 12px;
+}
+
+#dashboard .chart_container .card_content {
+	background-color: #fff;
+	border: 1px solid lightgray;
+	box-shadow: 2px 2px #999;
+	padding: 20px 30px 10px 30px;
+	margin-top: 10px; 
+    border-radius: 10px;
+}
+
+#dashboard .chart_container .card_content .chart1 {
+    width: 520px;
+	height: 200px;
+}
+
+#dashboard .chart_container .card_content #filter {
+    width: 100px;
+    float: right;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+#dashboard .chart_container .card_content .chart1 span {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 0 5px 0;
+}
+
+/*Quick Action*/
+#dashboard .action_details .row1{
+   display: grid;
+   grid-template-columns: 58% 40%;
+   gap: 1rem;
+}
+
+#dashboard .action_details .row1 .column1 {
+    width: 585px;
+    gap: 1rem;
+}
+
+#dashboard .action_details .row1 .column1 span {
+    font-weight: bold;
+    font-size: 15px;
+} 
+
+#dashboard .action_details .row1 .column1 .container{
+    margin-top: 10px;
+    background-color: white;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#dashboard .action_details .row1 .column1 .container:hover{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.50em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em, inset 0 0 0 2px #999, 1px 1px #999;
+}
+
+#dashboard .action_details .row1 .column1 .container p{
+    margin: 0;
+    padding: 2px;
+}
+
+#dashboard .action_details .row1 .column1 .container .name{
+	padding-left: 15px;
+	font-weight: 500;
+    font-size: 14px;
+}
+
+#dashboard .action_details .row1 .column1 .container .type {
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 45%;
+}
+
+#dashboard .action_details .row1 .column1 .container .view{
+    font-weight: 700;
+    font-size: 14px;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#dashboard .action_details .row1 .column1 .container .view:hover {
+    text-decoration: underline;
+}
+
+
+/*Left Container*/
+#dashboard .left_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    grid-gap: 15px;
+    position: absolute;
+    margin-left: 47%;
+    margin-top: -12%;
+
+}
+
+/*Calendar*/
+#dashboard .left_container .calendar_card{
+    background-color: #163666;
+    height: 250px;
+    width: 464px;
+}
+
+#dashboard .left_container .calendar_card .month {
+  padding: 20px 25px 10px 25px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Month list */
+#dashboard .left_container .calendar_card .month span{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#dashboard .left_container .calendar_card .month .cal_month{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#dashboard .left_container .calendar_card .month .time {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Weekdays (Mon-Sun) */
+#dashboard .left_container .calendar_card .weekdays {
+  margin: 0;
+  padding: 3px 0;
+  background-color: white;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+#dashboard .left_container .calendar_card .weekdays li {
+  display: inline-block;
+  width: 13%;
+  color: blue;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Days (1-31) */
+#dashboard .left_container .calendar_card .days {
+  padding: 0;
+  margin: 0;
+  background: white;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+#dashboard .left_container .calendar_card .days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Highlight the "current" day */
+#dashboard .left_container .calendar_card .days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/*Active Logs*/
+#dashboard .left_container .logs_card{
+    height: 110px;
+    width: 450px;
+    border-bottom: 1px solid lightgray;
+}
+
+#dashboard .left_container .logs_card .title {
+    padding-bottom: 3px;
+}
+
+#dashboard .left_container .logs_card .title span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#dashboard .left_container .logs_card .content span{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*Messages*/
+#dashboard .left_container .messages .row1 {
+   display: grid;
+   grid-template-columns: 58% 40%;
+   gap: 1rem;
+}
+
+#dashboard .left_container .messages .column1 {
+    width: 440px;
+    gap: 1rem;
+}
+
+#dashboard .left_container .messages .row1 .column1 span {
+    font-weight: bold;
+    font-size: 15px;
+} 
+
+#dashboard .left_container .messages .row1 .column1 .stdmsg{
+    margin-top: 10px;
+    background-color: white;
+    height: 43px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+#dashboard .left_container .messages .row1 .column1 .stdmsg p{
+    margin: 0;
+    padding: 2px;
+}
+
+#dashboard .left_container .messages .row1 .column1 #stdimage{
+   float: left;    
+   margin: 0 10px 0 7px;
+   width: 28px;
+   height: 28px;
+   border: 1px solid blue;
+   border-radius: 100%;
+}
+
+
+@media screen and (max-width: 788px){
+    /* section padding  */
+    .content_wrapper{
+        padding: 20px;
+    }
+
+    #dashboard .card_container .card {
+        width: 143px;
+        height: 90px;
+        border-radius: 8px;
+        margin-bottom:6px;
+    }
+
+    #dashboard .card_container .card .card_content{
+        padding: 3px 0px 0px 10px;
+    }
+
+    #dashboard .card_container .card .card_content .number{
+        font-size: 25px;
+    }
+
+    #dashboard .card_container .card .card_content .name{
+        font-size: 13px;
+    }
+
+    #dashboard .card_container .card .icon{
+       font-size: 55px;
+       right: 22px;
+       top: 0px;
+    } 
+}
+

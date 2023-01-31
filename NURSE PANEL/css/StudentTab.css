@@ -1,0 +1,232 @@
+/* header */
+#students .student_header{
+    margin-bottom: 10px;
+}
+#students .student_header h3{
+    font-size: 24px;
+}
+#students .student_header .custom_btn{
+    background: #5D8FD9;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 140px;
+    border-radius: 10px;
+}
+#students .student_header .custom_btn i{
+    margin-right: 10px;
+}
+
+/* filter */
+#students .filter_wrapper{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    /* height:50px; */
+    border-radius: 5px;
+    background: #D9D9D9;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#students .filter_wrapper .sort{
+    display: flex;
+    align-items: center;
+}
+#students .filter_wrapper .sort span{
+    font-weight: 500;
+     color: rgb(26, 26, 26);
+     margin-right: 10px;
+}
+#students .filter_wrapper .sort #filter{
+    width: 110px;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+#students .filter_wrapper .r{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 40px 40px;
+}
+#students .filter_wrapper .search{
+    width: 100%;
+}
+#students .filter_wrapper .search input{
+    padding: 5px 20px;
+    border-radius: 3px;
+    background: #F2F2F2;
+    width: 100%;
+    outline: none;
+    border: none;
+    
+}
+#students .filter_wrapper .grid,
+#students .filter_wrapper .bars{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#students .filter_wrapper .grid i{
+    color: #a0a0a0;
+    font-size: 23px;
+}
+#students .filter_wrapper .bars i{
+    color: #000;
+    font-size: 23px;
+}
+
+/*table*/
+#students .stud_table_details table{
+    width: 100%;
+}
+
+#students .stud_table_details th{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0 15px 15px 15px;
+}
+
+#students .stud_table_details th sub{
+    display: flex;
+    font-size: 10px;
+    font-weight: 500;
+    color: #999;
+}
+
+
+/* info */
+#students .stud_table_details .container {
+    border-width: 0.25px 2.25px 2.25px 0.25px;
+    border-color: #999;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#students .stud_table_details .container:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 1em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+#students .stud_table_details td img{
+    width: 50px;
+    height: 50px;
+}
+
+#students td span{
+    float: left;
+    padding-left: 15px;
+}
+
+#students td .stud_id {
+    color: #5180C7;
+    font-weight: 500;
+}
+
+#students td .status {
+    color: green;
+}
+
+#students td i:nth-child(1) {
+    color: #999;
+    padding-left: 15px;
+}
+
+#students td i:nth-child(2) {
+    color: #5180C7;
+    transform: translate(0, -1px);
+}
+
+#students .info_container{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); */
+    /* grid-gap: 20px; */
+    padding-inline-start: 0;
+    grid-gap: 15px;
+}
+#students .info_container .info{
+    padding: 7px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#students .card_container .card:hover{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+  #students .card_container .card img{
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+#students .card_container .card .card_content{
+    padding: 0 10px;
+    display: grid;
+}
+  #students .card_container .card .card_content .student_id{
+    font-weight: bold;
+  }
+  #students .card_container .card .card_content .student_name{
+    font-weight: 500;
+  }
+  #students .card_container .card .card_content .student_course{
+    color: #999;
+  }
+  #students .card_container .card .card_content .card_footer{
+    display: flex;
+    align-items: center;
+}
+  #students .card_container .card .card_content .card_footer .date{
+    color: #5D8FD9;
+    font-size: 14px;
+    flex: 1;
+  }
+  #students .card_container .card .card_content .card_footer i{
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  #students .card_container .card .card_content .card_footer i:nth-child(2){
+    color: #999;
+  }
+  #students .card_container .card .card_content .card_footer i:nth-child(3){
+    color: #5180C7;
+    transform: translate(0, -1px);
+  }
+
+
+@media screen and (max-width: 788px){
+    /* section padding  */
+    .content_wrapper{
+        padding: 20px;
+    }
+
+    #students .filter_wrapper{
+        padding: 10px 20px;
+        /* height:50px; */
+        border-radius: 5px;
+        background: #D9D9D9;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        row-gap: 15px;
+    }
+    #students .filter_wrapper .sort{
+        display: flex;
+        align-items: center;
+     
+    }
+
+
+}
+

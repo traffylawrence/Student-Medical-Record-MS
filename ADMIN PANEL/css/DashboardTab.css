@@ -1,0 +1,203 @@
+/*header*/
+#dashboard .dashboard_header{
+    margin-bottom: 10px;
+}
+#dashboard .dashboard_header h3{
+    font-size: 24px;
+}
+
+/*analytics layout*/
+#dashboard .card_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    grid-gap: 15px;
+}
+
+#dashboard .card_container .card{
+    padding: 5px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+
+#dashboard .card_container .card {
+	color: white;
+    width: 200px;
+    height: 80px;
+    border-radius: 8px;
+    margin-bottom:6px;
+}
+
+#dashboard .card_container .card .card_content{
+    padding: 0px 0px 10px 20px;
+    display: grid;
+}
+
+#dashboard .card_container .card .card_content .number{
+    font-weight: bold;
+    font-size: 28px;
+    padding-left: 8px;
+}
+
+#dashboard .card_container .card .card_content .name{
+    font-weight: 400;
+}
+
+#dashboard .card_container .card .icon{
+   display: fixed;
+   font-size: 60px;
+   position: absolute;
+   right: 30px;
+   top: -10px;
+} 
+
+#dashboard .chart_container {
+	display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    grid-gap: 15px;
+    padding-bottom: 12px;
+}
+
+#dashboard .chart_container .card_content {
+	background-color: #fff;
+	border: 1px solid #999;
+	box-shadow: 2px 2px #999;
+	padding: 20px 30px 10px 30px;
+	margin-top: 10px; 
+}
+
+#dashboard .chart_container .card_content .chart1 {
+    width: 520px;
+	height: 200px;
+}
+
+#dashboard .chart_container .card_content #filter {
+    width: 100px;
+    float: right;
+    border-radius: 3px;
+    padding: 5px 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+#dashboard .chart_container .card_content .chart1 span {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 0 5px 0;
+}
+
+#dashboard .chart_container .card_content .chart2 {
+    width: 270px;
+	height: 200px;
+}
+
+
+/*Nurses Today*/
+#dashboard .nurses_details .title {
+	font-weight: bold;
+}
+
+#dashboard .nurses_details span {
+	font-size: 15px;
+	padding: 10px 0 5px 5px;
+}
+
+#dashboard .nurses_details table {
+	width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+#dashboard .nurses_details table .container {
+	border: solid transparent;
+    box-shadow: inset 0 0 0 1px #999, 2px 2px #999;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#dashboard .nurses_details table .container:hover {
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.50em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em, inset 0 0 0 2px #999, 2px 2px #999;
+}
+
+#dashboard .nurses_details table td {
+    padding: 5px;
+}
+
+#dashboard .nurses_details table .container .number{
+	background-color: #5180c7;
+	color: #fff;
+	width: 8%;
+	font-weight: bold;
+}
+
+#dashboard .nurses_details table .container .name{
+	width: 25%;
+	padding-left: 15px;
+	font-weight: 500;
+}
+
+#dashboard .nurses_details table .container img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 2px solid #5180c7;
+}
+
+#dashboard .nurses_details table .container .class{
+	float: right;
+}
+
+#dashboard .nurses_details table .container .class span{
+	font-weight: 500;
+	color: #2D7538;
+	padding-right: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#dashboard .nurses_details table .container .class span:hover{
+    font-style: underline;
+}
+
+#dashboard .nurses_details table .container i{
+    color: #2D7538;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 788px){
+    /* section padding  */
+    .content_wrapper{
+        padding: 20px;
+    }
+
+    #dashboard .card_container .card {
+        width: 143px;
+        height: 90px;
+        border-radius: 8px;
+        margin-bottom:6px;
+    }
+
+    #dashboard .card_container .card .card_content{
+        padding: 3px 0px 0px 10px;
+    }
+
+    #dashboard .card_container .card .card_content .number{
+        font-size: 25px;
+    }
+
+    #dashboard .card_container .card .card_content .name{
+        font-size: 13px;
+    }
+
+    #dashboard .card_container .card .icon{
+       font-size: 55px;
+       right: 22px;
+       top: 0px;
+    } 
+}
+
